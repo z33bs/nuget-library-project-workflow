@@ -95,6 +95,8 @@ Preparing the csproj file
 
   * because license url and icon url are depreciated
 
+Sidenote on versioning: New csproj will autogenerate assemblyinfo code. Most important is assembly version, which is used by project reference to determine the correct version. This by convention is only changed if there are changes affecting backwards compatability. Assembly-file-version is only used by file system in windows. Information-version is unused, it was adopted by nuget for package version... but now there's an explicit package version.
+
 ### Alpha
 
 Very basic flow:
